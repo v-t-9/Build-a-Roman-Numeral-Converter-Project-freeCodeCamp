@@ -1,0 +1,121 @@
+:root{
+    --pink:#FF78C4;
+    --purple:#a065c2;
+    --peach:#FFBDF7;
+    --beige:#FFECEC;
+}
+
+body{
+    font-size: 46px;
+    font-family: 'Barlow', sans-serif;
+    background-color:  var(--beige);
+    color:var(--pink);
+}
+main{
+    width:auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:40px 80px;
+    justify-content: center;
+    justify-items: center;
+}
+h2{
+    text-align: center;
+    font-size: 64px;
+    font-family: 'DM Sans', sans-serif;
+    margin:20px;
+}
+#converter{
+    display: flex;
+    justify-content: center;
+    justify-items: center;  
+    padding: 20px;
+}
+#output{
+    text-align: center;
+    margin: 20px;
+    color: var(--pink);
+}
+#number,#convert-btn{
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+#convert-btn{
+    width: 200px;
+    height: 52px;
+    padding:0px 10px 0px 10px;
+    color:var(--purple);
+    background-color: var(--peach);
+    border:0;
+    border-radius: 5px;
+}
+#number{
+    width:400px;
+    height: 50px;
+    background-color: var(--purple);
+    color: var(--peach);
+    outline-color: var(--peach);
+    outline-width: 5px;
+    border: 0;
+    border-radius: 5px;
+}
+h3{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    margin:20px;
+}
+.hidden{
+    visibility: hidden;
+}
+/* Hide number-input arrows in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+@media  screen and (min-width:426px) and (max-width:768px){
+    body{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 46px;
+        margin: 10px;
+    }
+    #number, #convert-btn{
+        font-size: 20px;
+    }
+    #number{
+        width:200px;
+        height: 40px;
+    }
+    #convert-btn{
+        width: 100px;
+        height: 42px;
+    }
+}
+@media  screen and (max-width:425px){
+    body{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 32px;
+        margin: 5px;
+    }
+    #number, #convert-btn{
+        font-size: 16px;
+    }
+    #number{
+        width:140px;
+        height: 40px;
+    }
+    #convert-btn{
+        width: 70px;
+        height: 42px;
+        padding: 0;
+    }
+}
